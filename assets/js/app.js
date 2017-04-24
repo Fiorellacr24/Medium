@@ -17,7 +17,7 @@ var nav, div, logo, imglab,twitter, fb, edit, search;
 	user = document.createElement("img");
 	ico = document.createElement("img");
 
-	logo.setAttribute("src", "assets/img/medium-48.png");
+	logo.setAttribute("src", "assets/img/Medium-48.png");
 	imglab.setAttribute("src", "assets/img/laboratoria.png");
 	
 	contenedor.prepend(nav);
