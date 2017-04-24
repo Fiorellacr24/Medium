@@ -4,6 +4,12 @@
 	font-family: 'Raleway', sans-serif;
 }
 
+.icon-facebook,
+.icon-twitter,
+.icon-search{
+	margin-left: 5px;
+}
+
 .icon-facebook:hover{
 	color: #3b5998;
 }

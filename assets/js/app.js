@@ -3,14 +3,15 @@ window.addEventListener('load',function(event){
 
 var contenedor = document.getElementsByTagName("body")[0];
 
-var nav, div, logo, imglab,twitter, fb, edit, search;
+var nav, div, logo, imglab,twitter, fb, edit, search, s, user, ico;
 
 	nav = document.createElement("nav");
-	div = document.createElement("div");
+	right = document.createElement("div");
 	logo = document.createElement("img");
 	imglab = document.createElement("img");
 	twitter = document.createElement("i");
 	fb = document.createElement("i");
+	left = document.createElement("div");
 	edit = document.createElement("span");
 	search = document.createElement("i");
 	s = document.createElement("span");
@@ -28,25 +29,34 @@ var nav, div, logo, imglab,twitter, fb, edit, search;
 	ico.setAttribute("src", "assets/img/logo.png")
 
 	contenedor.prepend(nav);
-	nav.appendChild(div);
-	div.appendChild(logo);
-	div.appendChild(imglab);
-	div.appendChild(twitter);
-	div.appendChild(fb);
-	div.appendChild(edit);
-	div.appendChild(search);
-	div.appendChild(s);
-	div.appendChild(user);
-	div.appendChild(ico);
+	nav.appendChild(left);
+	left.appendChild(logo);
+	left.appendChild(imglab);
+	left.appendChild(twitter);
+	left.appendChild(fb);
+	nav.appendChild(right);
+	right.appendChild(edit);
+	right.appendChild(search);
+	right.appendChild(s);
+	right.appendChild(user);
+	right.appendChild(ico);
 
 	logo.style.width = "50px";
 
 	imglab.style.width = "90px";
 	imglab.style.margin = "10px 30px 5px";
 
+	right.style.float = "right";
+	left.style.float = "left";
+
+	s.style.backgroundColor = "#02b875";
+	s.style.borderRadius = "20px";
+	s.style.border = "20px";
+
 	user.style.width = "50px"; 
 
 	ico.style.width = "50px";
+	ico.style.marginLeft = "15px";
 
 		/*document.getElementById("contenido").innerHTML =
 		"<h1><b> Hazlo con estilo : Tipografías, iconos y sprite" + "</b> </h1>" +
