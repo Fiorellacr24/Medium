@@ -17,14 +17,18 @@ var nav, div, logo, imglab,twitter, fb, edit, search;
 	user = document.createElement("img");
 	ico = document.createElement("img");
 
-	logo.setAttribute("src", "assets/img/logo.png");
+	logo.setAttribute("src", "assets/img/medium-48.png");
 	imglab.setAttribute("src", "assets/img/laboratoria.png");
 	
 	contenedor.prepend(nav);
 	nav.appendChild(div);
 	div.appendChild(logo);
+	div.appendChild(imglab);
 
+	logo.style.width = "50px";
 
+	imglab.style.width = "90px";
+	imglab.style.margin = "10px 30px 5px";
 		/*document.getElementById("contenido").innerHTML =
 		"<h1><b> Hazlo con estilo : Tipografías, iconos y sprite" + "</b> </h1>" +
 		"<p>Te imaginas el mundo sin tipos de letra, tamaños, colores, o sin iconos , nada, nada sería iguaaaaaal!!!! Pero gracias a muchos desarrolladores y diseñadores, hoy contamos con una inimaginable gama de fuentes para nuestro desarrollos web, pero la pregunta que nos hacemos es, ¿existen reglas, hay una mejor forma de hacerlo, no sé que tipografía usar? Tengo muchas preguntas y pocas respuestas!!" + "</p>";
